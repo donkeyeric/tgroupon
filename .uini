@@ -1,0 +1,1 @@
+open_basedir="G:\Servers\www\tgroupon\;G:\Servers\UPUPW_NP5.6\memcached\;G:\Servers\UPUPW_NP5.6\phpmyadmin\;G:\Servers\UPUPW_NP5.6\temp\;C:\WINDOWS\Temp\"
