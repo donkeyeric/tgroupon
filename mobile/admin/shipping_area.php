@@ -56,7 +56,7 @@ elseif ($_REQUEST['act'] == 'add' && !empty($_REQUEST['shipping']))
     {
         $fields[$key]['name']   = $val['name'];
         $fields[$key]['value']  = $val['value'];
-        $fields[$key]['label']  = $_LANG[$val['name']];
+        $fields[$key]['label']  = isset($_LANG[$val['name']]) ? $_LANG[$val['name']] : (isset($val['label']) ? $val['label'] : $val['name']);
     }
     $count = count($fields);
     $fields[$count]['name']     = "free_money";
@@ -212,7 +212,7 @@ elseif ($_REQUEST['act'] == 'edit')
        else
        {
            $fields[$key]['name'] = $val['name'];
-           $fields[$key]['label']  = $_LANG[$val['name']];
+       		$fields[$key]['label']  = isset($_LANG[$val['name']]) ? $_LANG[$val['name']] : (isset($val['label']) ? $val['label'] : $val['name']);
        }
     }
 

@@ -279,6 +279,7 @@ if (!defined('INIT_NO_SMARTY') && gzip_enabled()) {
 }
 
 //*20141208TGROUPON独家开发新增*/
+if (!defined('INIT_NO_USERS')) {
 /* 	if (isset($_GET['u']))
     {
 		$u=$_GET['u'];
@@ -328,7 +329,6 @@ if (!defined('INIT_NO_SMARTY') && gzip_enabled()) {
 	// MOD START
 	$up_uid = $u;
 	$user_id = $_SESSION['user_id'];
-	
 	// 用户是否已经被推荐 过
 	$user_is_recommend = false;
 	$sql = "SELECT * FROM " . $GLOBALS['ecs']->table('ip_log') . " WHERE state=1 and u_id=$user_id LIMIT 0 , 1";	
@@ -469,7 +469,7 @@ if (!defined('INIT_NO_SMARTY') && gzip_enabled()) {
 				}
 		}
 	}
-
+}
 //新增绑定上下级关系结束
 /*20141208TGROUPON独家开发新增*/
 /* 检查是否是微信浏览器访问 */

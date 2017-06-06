@@ -1,9 +1,9 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:55:"G:/Servers/www/tgroupon/mobile/themes/miqinew/index.dwt";i:1;s:69:"G:/Servers/www/tgroupon/mobile/themes/miqinew/library/ad_position.lbi";i:2;s:70:"G:/Servers/www/tgroupon/mobile/themes/miqinew/library/cat_articles.lbi";i:3;s:72:"G:/Servers/www/tgroupon/mobile/themes/miqinew/library/recommend_best.lbi";i:4;s:69:"G:/Servers/www/tgroupon/mobile/themes/miqinew/library/page_footer.lbi";}s:7:"expires";i:1496575759;s:8:"maketime";i:1496572159;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:47:"D:/www/tgroupon/mobile/themes/miqinew/index.dwt";i:1;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/ad_position.lbi";i:2;s:62:"D:/www/tgroupon/mobile/themes/miqinew/library/cat_articles.lbi";i:3;s:64:"D:/www/tgroupon/mobile/themes/miqinew/library/recommend_best.lbi";i:4;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/page_footer.lbi";}s:7:"expires";i:1496746009;s:8:"maketime";i:1496742409;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="Generator" content="TGROUPON v2.7.3" />
 <meta charset="utf-8" />
-<title>x1a一优果的tgroupon分销系统 触屏版</title>
+<title>donkeyericg 一优果的tgroupon分销系统 触屏版</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -92,7 +92,7 @@ font-size: 12px;
 <div id="page">
   <header id="header" >
     <div class="header_l"> <a class="ico_02" href="#menu"> 菜单栏 </a> </div>
-    <h1> x1a一优果的tgroupon分销系统 </h1>
+    <h1> donkeyericg 一优果的tgroupon分销系统 </h1>
     <div class="header_r"> <a class="ico_01" href="flow.php"> 购物车 </a> </div>
   </header>
 </div>
@@ -190,8 +190,7 @@ TouchSlide({
     </div>
           
       
-</section>
-<style type="text/css">
+</section><style type="text/css">
 .picScroll3{margin:10px auto; text-align:center;}
 .picScroll3 .bd ul{width:100%;  float:left; padding-top:10px;}
 .picScroll3 .bd li{width:50%; float:left; font-size:14px; text-align:center;}
@@ -211,47 +210,47 @@ TouchSlide({
         </div>
         <div class="bd1">
             <ul>
-                                <!--jeffxieli><a href="goods.php?id=17&u=1629"><img src="http://lo.tgroupon.com/images/201705/thumb_img/17_thumb_G_1495929713756.jpg" /></a-->
-                <li><a href="goods.php?id=17&u=1629"><img src="../images/201705/thumb_img/17_thumb_G_1495929713756.jpg" /></a>
+                                <!--jeffxieli><a href="goods.php?id=17&u=1628"><img src="http://lo.tgroupon.com:8888/images/201705/thumb_img/17_thumb_G_1495929713756.jpg" /></a-->
+                <li><a href="goods.php?id=17&u=1628"><img src="../images/201705/thumb_img/17_thumb_G_1495929713756.jpg" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>396</span></del>
                 <span class="price_s"> ￥<span>275</span> </span>
 				
                                 <br>娇韵诗超V型纤容紧致瘦脸...                </li>
-                                                <!--jeffxieli><a href="goods.php?id=122&u=1629"><img src="http://lo.tgroupon.com/images/201311/thumb_img/122_thumb_G_1385665161614.jpg" /></a-->
-                <li><a href="goods.php?id=122&u=1629"><img src="../images/201311/thumb_img/122_thumb_G_1385665161614.jpg" /></a>
+                                                <!--jeffxieli><a href="goods.php?id=122&u=1628"><img src="http://lo.tgroupon.com:8888/images/201311/thumb_img/122_thumb_G_1385665161614.jpg" /></a-->
+                <li><a href="goods.php?id=122&u=1628"><img src="../images/201311/thumb_img/122_thumb_G_1385665161614.jpg" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>83</span></del>
                 <span class="price_s"> ￥<span>69</span> </span>
 				
                                 <br>玫琳凯中性洗面乳绿2号                </li>
-                </ul><ul>                                <!--jeffxieli><a href="goods.php?id=117&u=1629"><img src="http://lo.tgroupon.com/images/201311/thumb_img/117_thumb_G_1385664825588.jpg" /></a-->
-                <li><a href="goods.php?id=117&u=1629"><img src="../images/201311/thumb_img/117_thumb_G_1385664825588.jpg" /></a>
+                </ul><ul>                                <!--jeffxieli><a href="goods.php?id=117&u=1628"><img src="http://lo.tgroupon.com:8888/images/201311/thumb_img/117_thumb_G_1385664825588.jpg" /></a-->
+                <li><a href="goods.php?id=117&u=1628"><img src="../images/201311/thumb_img/117_thumb_G_1385664825588.jpg" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>95</span></del>
                 <span class="price_s"> ￥<span>39</span> </span>
 				
                                 <br>嘉娜宝玫瑰药用洗面奶15...                </li>
-                                                <!--jeffxieli><a href="goods.php?id=119&u=1629"><img src="http://lo.tgroupon.com/images/201311/thumb_img/119_thumb_G_1385664985753.jpg" /></a-->
-                <li><a href="goods.php?id=119&u=1629"><img src="../images/201311/thumb_img/119_thumb_G_1385664985753.jpg" /></a>
+                                                <!--jeffxieli><a href="goods.php?id=119&u=1628"><img src="http://lo.tgroupon.com:8888/images/201311/thumb_img/119_thumb_G_1385664985753.jpg" /></a-->
+                <li><a href="goods.php?id=119&u=1628"><img src="../images/201311/thumb_img/119_thumb_G_1385664985753.jpg" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>630</span></del>
                 <span class="price_s"> ￥<span>320</span> </span> 
                                 <br>蓓丽柔和泡沫洁面膏125...                </li>
-                </ul><ul>                                <!--jeffxieli><a href="goods.php?id=114&u=1629"><img src="http://lo.tgroupon.com/images/201311/thumb_img/114_thumb_G_1385664673343.jpg" /></a-->
-                <li><a href="goods.php?id=114&u=1629"><img src="../images/201311/thumb_img/114_thumb_G_1385664673343.jpg" /></a>
+                </ul><ul>                                <!--jeffxieli><a href="goods.php?id=114&u=1628"><img src="http://lo.tgroupon.com:8888/images/201311/thumb_img/114_thumb_G_1385664673343.jpg" /></a-->
+                <li><a href="goods.php?id=114&u=1628"><img src="../images/201311/thumb_img/114_thumb_G_1385664673343.jpg" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>105</span></del>
                 <span class="price_s"> ￥<span>59</span> </span>
 				
                                 <br>思亲肤绿茶泡沫洁面摩丝1...                </li>
-                                                <!--jeffxieli><a href="goods.php?id=22&u=1629"><img src="http://lo.tgroupon.com/images/201311/thumb_img/22_thumb_G_1384994678955.gif" /></a-->
-                <li><a href="goods.php?id=22&u=1629"><img src="../images/201311/thumb_img/22_thumb_G_1384994678955.gif" /></a>
+                                                <!--jeffxieli><a href="goods.php?id=22&u=1628"><img src="http://lo.tgroupon.com:8888/images/201311/thumb_img/22_thumb_G_1384994678955.gif" /></a-->
+                <li><a href="goods.php?id=22&u=1628"><img src="../images/201311/thumb_img/22_thumb_G_1384994678955.gif" /></a>
                 <br/>
                  
 				<font style="font-size:8px">市场价</font><del style="font-size: .675rem;">￥<span>750</span></del>
@@ -295,7 +294,7 @@ TouchSlide({
     <a href="./" class="homeBtn"> <span class="ico_05"> </span> </a> <a href="#top" class="gotop"> <span class="ico_06"> </span> <p> TOP </p>
     </a>
   </div>
-  <p class="link region"> <a href="http://lo.tgroupon.com/?computer=1"> 电脑版 </a> <a href="./"> 触屏版 </a> <a href="#"> 苹果客户端 </a> <a class="#"> Android客户端 </a> </p>
+  <p class="link region"> <a href="http://lo.tgroupon.com:8888/?computer=1"> 电脑版 </a> <a href="./"> 触屏版 </a> <a href="#"> 苹果客户端 </a> <a class="#"> Android客户端 </a> </p>
   <p class="region"> 
      
     &copy; 2005-2017 tgroupon分销系统 版权所有，并保留所有权利。 </p>
@@ -369,8 +368,7 @@ function get_search_box(){
  	}
 }
 </script>
-<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258776074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1258776074%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
- 
+<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258776074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1258776074%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>--> 
 <nav id="menu" style="display:None">
   <ul>
         <li> <a href="category.php?id=6"> 护肤 </a>
@@ -657,9 +655,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: 'wx4053f8763a39e608',
-    timestamp: 1496572159,
-    nonceStr: 'x8jk2ogWnJAGIDb9',
-    signature: 'f21e3eb8fd3afe33e3afa948825ec8f809638ef9',
+    timestamp: 1496742409,
+    nonceStr: 'VQueQjPCPl2wGe4P',
+    signature: '33a87eb3cfbd5fb94c097f82b4f536759ffafc12',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 
@@ -670,7 +668,7 @@ $(function() {
     wx.onMenuShareAppMessage({
       title: 'tgroupon分销系统',
       desc: 'tgroupon分销系统',
-      link: 'http://lo.tgroupon.com/mobile/index.php?u=1629',
+      link: 'http://lo.tgroupon.com:8888/mobile/index.php?u=1628',
       imgUrl: '',
       trigger: function (res) {
 		
@@ -678,7 +676,7 @@ $(function() {
 				
       },
       success: function (res) {
-		        window.location.href="http://lo.tgroupon.com/mobile/re_url.php?user_id=1629&type=1"; 
+		        window.location.href="http://lo.tgroupon.com:8888/mobile/re_url.php?user_id=1628&type=1"; 
 		      },
       cancel: function (res) {
         alert('很遗憾，您已取消分享');
@@ -690,14 +688,14 @@ $(function() {
 	//分享到朋友圈TGROUPON
     wx.onMenuShareTimeline({
       title: 'tgroupon分销系统',
-      link: 'http://lo.tgroupon.com/mobile/index.php?u=1629',
+      link: 'http://lo.tgroupon.com:8888/mobile/index.php?u=1628',
       imgUrl: '',
       trigger: function (res) {
 			
         			alert('恭喜！分享可以获取提成哦！');
 		      },
       success: function (res) {
-       	        window.location.href="http://lo.tgroupon.com/mobile/re_url.php?user_id=1629&type=2"; 
+       	        window.location.href="http://lo.tgroupon.com:8888/mobile/re_url.php?user_id=1628&type=2"; 
 		      },
       cancel: function (res) {
          alert('很遗憾，您已取消分享');
