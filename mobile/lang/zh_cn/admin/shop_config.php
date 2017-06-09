@@ -451,4 +451,11 @@ $_LANG['cfg_range']['sms_signin']['1'] = '发短信';
 $_LANG['cfg_range']['sms_signin']['0'] = '不发短信';
 $_LANG['cfg_name']['sms_ecmoban_user'] = '短信接口用户名';
 $_LANG['cfg_name']['sms_ecmoban_password'] = '短信接口密码';
+
+$_LANG['cfg_name']['waimai'] = '外卖平台相关设置';
+$_LANG['cfg_name']['meituan_redirect'] = '美团外卖店跳转地址';
+$_LANG['cfg_name']['ele_redirect'] = '饿了么店跳转地址';
+$_LANG['cfg_name']['default_redirect'] = '默认网店跳转地址';
+
+
 ?>

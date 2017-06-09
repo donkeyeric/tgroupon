@@ -390,4 +390,18 @@ class DadaOpenapi{
 
 }
 
+function get_data_config() {
+	$config = array();
+	$config['app_key'] = 'dadaf3f03dc32b07ed0';
+	$config['app_secret'] = '7e4e615af165fe63cbf40e52abbc79e8';
+	$config['source_id'] = '73753';
+	$config['url'] = 'http://newopen.qa.imdada.cn/api/order/addOrder';
+	return $config;
+}
+
+function dada_add_order() {
+	
+}
+
+
 ?>
