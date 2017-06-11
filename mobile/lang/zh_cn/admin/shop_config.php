@@ -452,10 +452,24 @@ $_LANG['cfg_range']['sms_signin']['0'] = '不发短信';
 $_LANG['cfg_name']['sms_ecmoban_user'] = '短信接口用户名';
 $_LANG['cfg_name']['sms_ecmoban_password'] = '短信接口密码';
 
+//--外卖平台相关设置
 $_LANG['cfg_name']['waimai'] = '外卖平台相关设置';
-$_LANG['cfg_name']['meituan_redirect'] = '美团外卖店跳转地址';
-$_LANG['cfg_name']['ele_redirect'] = '饿了么店跳转地址';
-$_LANG['cfg_name']['default_redirect'] = '默认网店跳转地址';
+//--美团外卖
+$_LANG['cfg_name']['meituan_redirect'] = '（美团外卖）店跳转地址';
+//--新达达
+$_LANG['cfg_name']['dada_app_key'] = '（新达达）APP KEY';
+$_LANG['cfg_name']['dada_app_secret'] = '（新达达）APP SECRECT';
+$_LANG['cfg_name']['dada_source_id'] = '（新达达）SOURCE ID';
+$_LANG['cfg_name']['dada_open_api'] = '（新达达）OPEN API';
+$_LANG['cfg_name']['dada_shop_no'] = '（新达达）SHOP NO';
+//--饿了么
+$_LANG['cfg_name']['ele_redirect'] = '（饿了么）店跳转地址';
+//--本网站
+$_LANG['cfg_name']['default_redirect'] = '（默认）店跳转地址';
+
+
+
+
 
 
 ?>
