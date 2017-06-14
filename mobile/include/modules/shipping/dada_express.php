@@ -124,7 +124,7 @@ class dada_express
      * @param   float   $goods_number   商品数量
      * @return  decimal
      */
-    function calculate($goods_weight, $goods_amount, $goods_number)
+    function calculate($goods_weight, $goods_amount, $goods_number, $order_id = false)
     {
         if ($this->configure['free_money'] > 0 && $goods_amount >= $this->configure['free_money'])
         {
@@ -143,7 +143,23 @@ class dada_express
             {
                 if ($goods_weight > 1)
                 {
-                    $fee += (ceil(($goods_weight - 1))) * $this->configure['step_fee'];
+//                     $fee += (ceil(($goods_weight - 1))) * $this->configure['step_fee'];
+                    
+                	if ($order_id === false) {
+                		$order_id = 'T' . rand(100000, 999999);
+                	}
+                	
+                	$args = [
+                			'origin_id' => $order_id,
+                			'city_code' => 'xxx',
+                			'cargo_price' => 'xxx',
+                			'is_prepay' => 'xxx',
+                			'expected_fetch_time' => 'xxx',
+                			'receiver_name' => 'xxx',
+                			'receiver_address' => 'xxx',
+                			'callback' => 'xxx',
+                			 
+                	];
                 }
             }
 

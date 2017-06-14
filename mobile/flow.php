@@ -778,8 +778,14 @@ elseif ($_REQUEST['step'] == 'checkout')
     foreach ($shipping_list AS $key => $val)
     {
         $shipping_cfg = unserialize_config($val['configure']);
-        $shipping_fee = ($shipping_count == 0 AND $cart_weight_price['free_shipping'] == 1) ? 0 : shipping_fee($val['shipping_code'], unserialize($val['configure']),
-        $cart_weight_price['weight'], $cart_weight_price['amount'], $cart_weight_price['number']);
+        if ($shipping_count == 0 AND $cart_weight_price['free_shipping'] == 1) {
+        	$shipping_fee = 0;
+        } elseif ($val['shipping_code'] == 'dada_express') {
+        	$shipping_fee = (new dada_express(unserialize($val['configure'])))->calculate($goods_weight, $goods_amount, $goods_number);
+        	 
+        } else {
+        	$shipping_fee = shipping_fee($val['shipping_code'], unserialize($val['configure']), $cart_weight_price['weight'], $cart_weight_price['amount'], $cart_weight_price['number']);
+        }
 
         $shipping_list[$key]['format_shipping_fee'] = price_format($shipping_fee, false);
         $shipping_list[$key]['shipping_fee']        = $shipping_fee;

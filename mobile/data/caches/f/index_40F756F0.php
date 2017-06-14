@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:47:"D:/www/tgroupon/mobile/themes/miqinew/index.dwt";i:1;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/ad_position.lbi";i:2;s:62:"D:/www/tgroupon/mobile/themes/miqinew/library/cat_articles.lbi";i:3;s:64:"D:/www/tgroupon/mobile/themes/miqinew/library/recommend_best.lbi";i:4;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/page_footer.lbi";}s:7:"expires";i:1497001301;s:8:"maketime";i:1496997701;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:47:"D:/www/tgroupon/mobile/themes/miqinew/index.dwt";i:1;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/ad_position.lbi";i:2;s:62:"D:/www/tgroupon/mobile/themes/miqinew/library/cat_articles.lbi";i:3;s:64:"D:/www/tgroupon/mobile/themes/miqinew/library/recommend_best.lbi";i:4;s:61:"D:/www/tgroupon/mobile/themes/miqinew/library/page_footer.lbi";}s:7:"expires";i:1497415602;s:8:"maketime";i:1497412002;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="Generator" content="TGROUPON v2.7.3" />
@@ -190,8 +190,7 @@ TouchSlide({
     </div>
           
       
-</section>
-<style type="text/css">
+</section><style type="text/css">
 .picScroll3{margin:10px auto; text-align:center;}
 .picScroll3 .bd ul{width:100%;  float:left; padding-top:10px;}
 .picScroll3 .bd li{width:50%; float:left; font-size:14px; text-align:center;}
@@ -369,8 +368,7 @@ function get_search_box(){
  	}
 }
 </script>
-<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258776074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1258776074%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
- 
+<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258776074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1258776074%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>--> 
 <nav id="menu" style="display:None">
   <ul>
         <li> <a href="category.php?id=6"> 护肤 </a>
@@ -657,9 +655,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: 'wx4053f8763a39e608',
-    timestamp: 1496997703,
-    nonceStr: '5CVmLTKeC6Zyslu7',
-    signature: '96ac217d3610eb5ad5a393756e756162f7dd6ec8',
+    timestamp: 1497412003,
+    nonceStr: '8ZwKvheY5EbZaqi1',
+    signature: '084dbe292cbc79f462cdffe2f9c0b0a7b3f35474',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 
