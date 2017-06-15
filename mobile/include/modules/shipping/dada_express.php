@@ -124,7 +124,7 @@ class dada_express
      * @param   float   $goods_number   商品数量
      * @return  decimal
      */
-    function calculate($goods_weight, $goods_amount, $goods_number, $order_id = false)
+    function calculate($goods_weight, $goods_amount, $goods_number, $order_id = false, $order_amout, $receiver_name, $receiver_address)
     {
         if ($this->configure['free_money'] > 0 && $goods_amount >= $this->configure['free_money'])
         {
@@ -151,14 +151,13 @@ class dada_express
                 	
                 	$args = [
                 			'origin_id' => $order_id,
-                			'city_code' => 'xxx',
-                			'cargo_price' => 'xxx',
-                			'is_prepay' => 'xxx',
-                			'expected_fetch_time' => 'xxx',
+                			'city_code' => dada_shenzhen_city_code(),
+                			'cargo_price' => $order_amout,
+                			'is_prepay' => 0,
+                			'expected_fetch_time' => (time() + 60*15),
                 			'receiver_name' => 'xxx',
                 			'receiver_address' => 'xxx',
                 			'callback' => 'xxx',
-                			 
                 	];
                 }
             }

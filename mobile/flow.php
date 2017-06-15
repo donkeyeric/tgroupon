@@ -781,7 +781,7 @@ elseif ($_REQUEST['step'] == 'checkout')
         if ($shipping_count == 0 AND $cart_weight_price['free_shipping'] == 1) {
         	$shipping_fee = 0;
         } elseif ($val['shipping_code'] == 'dada_express') {
-        	$shipping_fee = (new dada_express(unserialize($val['configure'])))->calculate($goods_weight, $goods_amount, $goods_number);
+        	$shipping_fee = (new dada_express(unserialize($val['configure'])))->calculate($goods_weight, $goods_amount, $goods_number, false, $consignee['consignee'], $consignee['address']);
         	 
         } else {
         	$shipping_fee = shipping_fee($val['shipping_code'], unserialize($val['configure']), $cart_weight_price['weight'], $cart_weight_price['amount'], $cart_weight_price['number']);
