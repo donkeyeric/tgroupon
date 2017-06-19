@@ -462,6 +462,7 @@ $_LANG['cfg_name']['dada_app_secret'] = '（新达达）APP SECRECT';
 $_LANG['cfg_name']['dada_source_id'] = '（新达达）SOURCE ID';
 $_LANG['cfg_name']['dada_open_api'] = '（新达达）OPEN API';
 $_LANG['cfg_name']['dada_shop_no'] = '（新达达）SHOP NO';
+$_LANG['cfg_name']['dada_city_code_shenzhen'] = '（新达达）CITY CODE SHENZHEN';
 //--饿了么
 $_LANG['cfg_name']['ele_redirect'] = '（饿了么）店跳转地址';
 //--本网站

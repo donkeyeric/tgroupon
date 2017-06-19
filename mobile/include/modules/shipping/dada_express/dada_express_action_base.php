@@ -1,5 +1,8 @@
 <?php
 
+require_once ROOT_PATH . '/include/modules/shipping/dada_express/dada_express_open_api.php';
+
+
 /**
  * 获取达达配置
  * 
@@ -33,27 +36,16 @@ function dada_get_api_result($path = '', $data = []) {
 	$config = get_data_config($path);
 	$data = array_merge($data, ['shop_no' => $config['shop_no']]);
 	$obj = new DadaOpenapi($config);
-	try {
-		$reqStatus = $obj->makeRequest($data);
-		if (!$reqStatus) {
-			//接口请求正常，判断接口返回的结果，自定义业务操作
-			if ($obj->getCode() == 0) {
-				$result = $obj->getResult();
-			} else {
-				//请求异常或者失败
-				$msg = sprintf('code:%s，msg:%s', $obj->getCode(), $obj->getMsg());
-				api_request_exception_log($url, $msg, $retry, $type);
-			}
+	$reqStatus = $obj->makeRequest($data);
+	if ($reqStatus) {
+		//接口请求正常，判断接口返回的结果，自定义业务操作
+		if ($obj->getCode() == 0) {
+			$result = $obj->getResult();
 		} else {
 			//请求异常或者失败
-			api_request_exception_log($url, $msg, $retry, $type);
+			$msg = sprintf('code:%s，msg:%s', $obj->getCode(), $obj->getMsg());
+			open_api_exception_log(DADA_EXCEPTION_TYPE, DADA_EXCEPTION_TYPE_NAME, '', '', $msg);
 		}
-
-
-	} catch (Exception $e) {
-		//请求异常或者失败
-		api_request_exception_log($url, $msg, $retry, $type);
-
 	}
 	return $result;
 }

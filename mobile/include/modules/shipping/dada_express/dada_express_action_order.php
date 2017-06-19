@@ -1,8 +1,8 @@
 <?php
 
-require_once 'data_express_open_api.php';
-require_once 'data_express_open_action_base.php';
-require_once 'data_express_open_action_common.php';
+require_once ROOT_PATH . '/include/modules/shipping/dada_express/dada_express_open_api.php';
+require_once ROOT_PATH . '/include/modules/shipping/dada_express/dada_express_action_base.php';
+require_once ROOT_PATH . '/include/modules/shipping/dada_express/dada_express_action_common.php';
 
 
 /**
@@ -33,4 +33,14 @@ function dada_readd_order($args) {
  */
 function dada_deliver_fee($args) {
 	return dada_get_api_result('/api/order/queryDeliverFee', $args);	
+}
+
+/**
+ * 查询运费后发单接口
+ * 
+ * @param unknown $arg
+ * @return NULL|mixed
+ */
+function dada_add_after_query($arg) {
+	return dada_get_api_result('/api/order/addAfterQuery', $args);
 }

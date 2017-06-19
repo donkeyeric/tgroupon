@@ -238,4 +238,9 @@ define('LICENSE_VERSION', '1.0');
 /* 配送方式 */
 define('SHIP_LIST', 'cac|city_express|ems|flat|fpd|post_express|post_mail|presswork|sf_express|sto_express|yto|zto');
 
+/* 达达 */
+define('DADA_EXCEPTION_TYPE', 1);
+define('DADA_EXCEPTION_TYPE_NAME', 'dada_open_api');
+
+
 ?>

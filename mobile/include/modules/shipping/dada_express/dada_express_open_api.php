@@ -159,6 +159,13 @@ class DadaOpenapi{
 		$resp = curl_exec($curl);
 		//var_dump( curl_error($curl) );//如果在执行curl的过程中出现异常，可以打开此开关查看异常内容。
 		$info = curl_getinfo($curl);
+		$error = curl_error($curl);
+		
+		if ($error) {
+			//请求异常或者失败
+			open_api_exception_log(DADA_EXCEPTION_TYPE, DADA_EXCEPTION_TYPE_NAME, $url, $data, $error);				
+		}
+		
 		curl_close($curl);
 		if (isset($info['http_code']) && $info['http_code'] == 200) {
 			return $resp;

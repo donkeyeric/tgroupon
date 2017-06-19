@@ -5,6 +5,9 @@
  * ============================================================================
  */
 
+require_once ROOT_PATH . '/include/modules/shipping/dada_express/dada_express_action_base.php';
+
+
 if (!defined('IN_ECTOUCH'))
 {
     die('Hacking attempt');
@@ -108,10 +111,10 @@ class dada_express
 
     public function initApi() {
     	$config = array();
-    	$config['app_key'] = 'dadaf3f03dc32b07ed0';
-    	$config['app_secret'] = '7e4e615af165fe63cbf40e52abbc79e8';
-    	$config['source_id'] = '73753';
-    	$config['url'] = 'http://newopen.qa.imdada.cn/api/order/addOrder';
+    	$config['app_key'] = $_CFG['dada_app_key'];
+    	$config['app_secret'] = $_CFG['dada_app_secret'];
+    	$config['source_id'] = $_CFG['dada_source_id'];
+    	$config['url'] = $_CFG['dada_open_api'];
     	
     	return new DadaOpenapi($config);    	
     }
@@ -124,8 +127,10 @@ class dada_express
      * @param   float   $goods_number   商品数量
      * @return  decimal
      */
-    function calculate($goods_weight, $goods_amount, $goods_number, $order_id = false, $order_amout, $receiver_name, $receiver_address)
-    {
+    function calculate($goods_weight, $goods_amount, $goods_number, $order_id = false, $order_amout, $receiver_name, $receiver_address, $callback = '')
+    {	
+    	global $_CFG;
+    	
         if ($this->configure['free_money'] > 0 && $goods_amount >= $this->configure['free_money'])
         {
             return 0;
@@ -141,7 +146,7 @@ class dada_express
             }
             else
             {
-                if ($goods_weight > 1)
+                if ($goods_weight > 0)
                 {
 //                     $fee += (ceil(($goods_weight - 1))) * $this->configure['step_fee'];
                     
@@ -151,21 +156,58 @@ class dada_express
                 	
                 	$args = [
                 			'origin_id' => $order_id,
-                			'city_code' => dada_shenzhen_city_code(),
+                			'city_code' => $_CFG['dada_city_code_shenzhen'],
                 			'cargo_price' => $order_amout,
                 			'is_prepay' => 0,
                 			'expected_fetch_time' => (time() + 60*15),
-                			'receiver_name' => 'xxx',
-                			'receiver_address' => 'xxx',
-                			'callback' => 'xxx',
-                	];
+                			'receiver_name' => $receiver_name,
+                			'receiver_address' => $receiver_address,
+                			'callback' => $callback,
+                	];               	
+                	$api_result = dada_get_api_result('/api/order/queryDeliverFee', $args);
+                	
+                	write_static_cache($order_id, array_merge($api_result, ['expire' => time() + 60*3 - 10]));
+                	
+                	$fee = $api_result['fee'];
                 }
             }
 
             return $fee;
         }
     }
-
+	
+    /**
+     * 增加订单
+     * 
+     * @param unknown $goods_weight
+     * @param unknown $goods_amount
+     * @param unknown $goods_number
+     * @param unknown $order_id
+     * @param unknown $order_amout
+     * @param unknown $receiver_name
+     * @param unknown $receiver_address
+     * @param string $callback
+     * @return NULL|mixed
+     */
+    function add($goods_weight, $goods_amount, $goods_number, $order_id, $order_amout, $receiver_name, $receiver_address, $callback = '') {
+    	
+    	$delever_fee_cache = read_static_cache($order_id);
+    	
+    	if (!$delever_fee_cache || time() > $delever_fee_cache['expire']) {
+    		    		
+			$this->calculate($goods_weight, $goods_amount, $goods_number, $order_id, $order_amout, $receiver_name, $receiver_address, $callback);		
+			$delever_fee_cache = read_static_cache($order_id);
+				
+    	}
+    	
+        $args = [
+				'deliveryNo' => $delever_fee_cache['deliveryNo'],
+        ];
+        $result = dada_get_api_result('/api/order/addAfterQuery', $args);
+        
+        return $result;
+    }
+    
     /**
      * 查询快递状态
      *

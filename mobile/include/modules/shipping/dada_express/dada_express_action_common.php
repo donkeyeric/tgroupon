@@ -31,7 +31,3 @@ function data_get_city_code($city_name) {
 	}
 	return false;
 }
-
-function dada_shenzhen_city_code() {
-	return '888';
-}

@@ -1304,4 +1304,13 @@ function write_static_cache($cache_name, $caches)
     file_put_contents($cache_file_path, $content, LOCK_EX);
 }
 
+function open_api_exception_log($type, $type_name, $url, $params, $api_result) {
+
+	$data = combine('type', 'type_name', 'url', 'params', 'api_result');
+	$data['updated_at'] = time();
+	$data['params'] = serialize($data['params']);
+	$GLOBALS['db']->autoExecute($GLOBALS['ecs']->table('open_api_exception'), $data, 'INSERT');
+	
+}
+
 ?>
